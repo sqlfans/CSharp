@@ -77,4 +77,39 @@ if (istrue)
 {
 	Console.WriteLine("非常优秀！");
 }
+
+
+//学习成绩判断
+// 成绩 >= 90  :  A 
+// 成绩 >= 80  :  B
+// 成绩 >= 70  :  C
+// 成绩 >= 60  :  D
+// 成绩 >   60  :  E
+Console.WriteLine("请输入成绩：");
+int score = Convert.ToInt32(Console.ReadLine());
+if (score >= 90 && score<=100)
+{
+	Console.WriteLine("A");
+}
+if (score >= 80 && score < 90)
+{
+	Console.WriteLine("B");
+}
+if(score >= 70 && score < 80)
+{
+	Console.WriteLine("C");
+}
+if (score >= 60 && score < 70)
+{
+	Console.WriteLine("D");
+}
+if (score < 60 && score >= 0)
+{
+	Console.WriteLine("E");
+}
+else
+{
+	Console.WriteLine("输入错误！！！");
+}
+
 Console.ReadLine();
