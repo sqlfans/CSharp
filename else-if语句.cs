@@ -72,3 +72,48 @@ else
 {
 	Console.WriteLine("用户名和密码输入错误，程序退出。");
 }
+
+
+#异常处理学习
+try
+{
+	Console.WriteLine("请输入年份");
+	int year = Convert.ToInt32(Console.ReadLine());
+	Console.WriteLine("请输入月份：");
+	int month = Convert.ToInt32(Console.ReadLine());
+	if(month > 12 && month <= 0) { return; }
+	switch (month)
+	{
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			Console.WriteLine("31");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			Console.WriteLine("30");
+			break;
+		case 2:
+			if ((year % 4 == 0) || (year % 400 == 0 && year % 100 != 0))
+			{
+				Console.WriteLine("29");
+			}
+			else
+			{
+				Console.WriteLine("28");
+			}
+			break;
+	}
+}
+catch
+{
+	Console.WriteLine("年份或月份输入格式错误：");
+}
+		Console.ReadLine();
+}
