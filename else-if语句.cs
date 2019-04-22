@@ -43,3 +43,32 @@ else
 		Console.WriteLine("密码输入两次错误。");
 	}
 }
+
+//用户名密码判断练习
+//正确用户名admin。正确密码888888，输入错误提示错误地方，并退出程序
+Console.WriteLine("请输入用户名：");
+String name = Convert.ToString(Console.ReadLine());
+Console.WriteLine("请输入密码：");
+String passwords = Convert.ToString(Console.ReadLine());
+if(name=="admin" && passwords == "888888")
+{
+	Console.WriteLine("用户名和密码输入正确：");
+}
+if (name == "admin")
+{
+	if (passwords != "888888")
+	{
+		Console.WriteLine("密码输入错误！，程序退出。");
+	}
+}
+if (passwords == "888888")
+{
+	if (name != "admin")
+	{
+		Console.WriteLine("用户名错误！，程序退出。");
+	}
+}
+else
+{
+	Console.WriteLine("用户名和密码输入错误，程序退出。");
+}
