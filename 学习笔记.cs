@@ -65,3 +65,16 @@ if (isage)
 {
 	Console.WriteLine("您好，您已达到中华人民共和国法定结婚年龄。");
 }
+
+//成绩判断练习
+//如果语文数学均为优秀（>80）或（语文>92数学>70）均判断为合格
+Console.WriteLine("请输入语文成绩：");
+int chinaese = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("请输入数学成绩：");
+int math = Convert.ToInt32(Console.ReadLine());
+bool istrue = ((chinaese>80 && math>80)||(chinaese>92&&math>85));
+if (istrue)
+{
+	Console.WriteLine("非常优秀！");
+}
+Console.ReadLine();
