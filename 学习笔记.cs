@@ -51,3 +51,17 @@ Console.WriteLine((--z).ToString());//-1
 Console.WriteLine((--z).ToString());//-2
 Console.WriteLine((z--).ToString());//-2
 Console.WriteLine((z--).ToString());//-3
+
+//用户是否结婚年龄判断练习
+Console.WriteLine("请输入年龄：");
+int age = Convert.ToInt32(Console.ReadLine());
+if (age >= 20)
+{
+	Console.WriteLine("您好，您已达到中华人民共和国法定结婚年龄。");
+}
+//isage储存判断结果
+bool isage = (age >=20);//加上括号好习惯
+if (isage)
+{
+	Console.WriteLine("您好，您已达到中华人民共和国法定结婚年龄。");
+}
