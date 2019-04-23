@@ -21,7 +21,7 @@ while (i < count)
 }
 Console.WriteLine("总人数{0}，总成绩\t{1}，平均分数\t{2}。",count,sum,sum/count);
 
-Console.WriteLine("学会了吗？输入y 或 n：");
+Console.WriteLine("学会了吗？输入 y 或 n：");
 string isnot = Console.ReadLine();
 int i = 0;
 while (isnot == "y")
